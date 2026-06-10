@@ -10,9 +10,12 @@ while True:
 
     if opcao == "1":
         nome = input("Nome do filme: ")
+        nota = input("Nota: ")
 
         filme = {
-            "nome": nome
+            "nome": nome, 
+            
+            "nota": nota
         }
 
         filmes.append(filme)
@@ -20,6 +23,7 @@ while True:
     elif opcao == "2":
         for filme in filmes:
             print(filme["nome"])
+            print(filme["nota"])
 
     elif opcao == "3":
         break
