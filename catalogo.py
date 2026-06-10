@@ -18,7 +18,8 @@ while True:
         filmes.append(filme)
 
     elif opcao == "2":
-        print(filmes)
+        for filme in filmes:
+            print(filme["nome"])
 
     elif opcao == "3":
         break
