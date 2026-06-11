@@ -10,7 +10,7 @@ while True:
 
     if opcao == "1":
         nome = input("Nome do filme: ")
-        nota = input("Nota: ")
+        nota = float(input("Nota: "))
 
         filme = {
             "nome": nome, 
@@ -21,9 +21,8 @@ while True:
         filmes.append(filme)
 
     elif opcao == "2":
-        for filme in filmes:
-            print(filme["nome"])
-            print(filme["nota"])
+     for filme in filmes:
+         print(f'{filme["nome"]} - Nota {filme["nota"]}')
 
     elif opcao == "3":
         break
